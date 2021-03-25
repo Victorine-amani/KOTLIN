@@ -4,7 +4,7 @@ fun main() {
     create()
     gramma()
     builtin()
-   println(Arrays.toString(createArray(arrayOf("Victorine","Elizabeth","Hope"))))
+   createArray(arrayOf("Victorine","Elizabeth","Hope"))
 }
 fun create(){
     val listArray= arrayOf("Victorine",true,"Amani","14")
@@ -23,8 +23,11 @@ fun builtin(){
     val index=numbers.indexOf(158)
     println(index)
     val sortedNumbers=numbers.sortedArray()
-    println(Arrays.toString(sortedNumbers))
+   for(i in sortedNumbers)
+       println(i)
+// println(Arrays.toString(sortedNumbers))
 }
 fun createArray(names:Array<String>):Array<String>{
     return names
+    println(Arrays.toString(names))
 }
